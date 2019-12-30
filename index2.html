@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,12 @@
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/wow.min.js"></script>
 	<style>
-	body {height: 5000px;}
+		body {
+			height: 5000px;
+		}
 	</style>
 </head>
+
 <body>
 	<div class="container">
 		<div class="jumbotron my-3">
@@ -38,6 +42,7 @@
 		<div class="alert alert-primary">
 			<h5>Bootstrap 색상</h5>
 			<div class="text-primary">primary</div>
+			<div class="text-info">info</div>
 			<div class="text-warning">warning</div>
 			<div class="text-danger">danger</div>
 			<div class="text-success">success</div>
@@ -48,6 +53,9 @@
 		<div class="alert alert-success">
 			alert-success
 		</div>
+		<div class="alert alert-info">
+			alert-info
+		</div>
 		<div class="alert alert-danger">
 			alert-danger
 		</div>
@@ -57,7 +65,170 @@
 		<div class="alert alert-secondary">
 			alert-secondary
 		</div>
+		<div>
+			<h5>
+				Badge를 알아보자
+				<span class="badge badge-primary">New</span>
+			</h5>
+			<h5>
+				Badge를 알아보자
+				<span class="badge badge-success">New</span>
+			</h5>
+			<ul class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">Home</a></li>
+				<li class="breadcrumb-item"><a href="#">Library</a></li>
+				<li class="breadcrumb-item active">Data</li>
+			</ul>
+		</div>
+		<div>
+			<h5>button을 알아보자</h5>
+			<div class="py-2">
+				<button type="button" class="btn btn-primary">Primary</button>
+				<button type="button" class="btn btn-secondary">Secondary</button>
+				<button type="button" class="btn btn-success">Success</button>
+				<button type="button" class="btn btn-danger">Danger</button>
+				<button type="button" class="btn btn-warning">Warning</button>
+				<button type="button" class="btn btn-info">Info</button>
+				<button type="button" class="btn btn-light">Light</button>
+				<button type="button" class="btn btn-dark">Dark</button>
+				<button type="button" class="btn btn-link">Link</button>
+			</div>
+			<div class="py-2">
+				<button type="button" class="btn btn-outline-primary">Primary</button>
+				<button type="button" class="btn btn-outline-secondary">Secondary</button>
+				<button type="button" class="btn btn-outline-success">Success</button>
+				<button type="button" class="btn btn-outline-danger">Danger</button>
+				<button type="button" class="btn btn-outline-warning">Warning</button>
+				<button type="button" class="btn btn-outline-info">Info</button>
+				<button type="button" class="btn btn-outline-light">Light</button>
+				<button type="button" class="btn btn-outline-dark">Dark</button>
+				<button type="button" class="btn btn-outline-link">Link</button>
+			</div>
+			<div class="py-2">
+				<button type="button" class="btn btn-sm btn-primary">Primary</button>
+				<button type="button" class="btn btn-sm btn-secondary">Secondary</button>
+				<button type="button" class="btn btn-sm btn-success">Success</button>
+				<button type="button" class="btn btn-sm btn-danger">Danger</button>
+				<button type="button" class="btn btn-sm btn-warning">Warning</button>
+				<button type="button" class="btn btn-sm btn-info">Info</button>
+				<button type="button" class="btn btn-sm btn-light">Light</button>
+				<button type="button" class="btn btn-sm btn-dark">Dark</button>
+				<button type="button" class="btn btn-sm btn-link">Link</button>
+			</div>
+			<div class="py-2">
+				<button type="button" class="btn btn-lg btn-primary">Primary</button>
+				<button type="button" class="btn btn-lg btn-secondary">Secondary</button>
+				<button type="button" class="btn btn-lg btn-success">Success</button>
+				<button type="button" class="btn btn-lg btn-danger">Danger</button>
+				<button type="button" class="btn btn-lg btn-warning">Warning</button>
+				<button type="button" class="btn btn-lg btn-info">Info</button>
+				<button type="button" class="btn btn-lg btn-light">Light</button>
+				<button type="button" class="btn btn-lg btn-dark">Dark</button>
+				<button type="button" class="btn btn-lg btn-link">Link</button>
+			</div>
+			<div class="py-2">
+				<button type="button" class="btn btn-primary btn-block">Block level button</button>
+				<button type="button" class="btn btn-secondary btn-block">Block level button</button>
+			</div>
+			<div class="py-2">
+				<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+				<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+				<button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+				<button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+			</div>
+			<div class="py-2">
+				<button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+					Single toggle
+				</button>
+			</div>
+			<div class="py-2">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary">Left</button>
+					<button type="button" class="btn btn-secondary">Middle</button>
+					<button type="button" class="btn btn-secondary">Right</button>
+				</div>
+			</div>
+			<div class="py-2">
+				<div class="btn-group">
+					<button type="button" class="btn btn-secondary">1</button>
+					<button type="button" class="btn btn-secondary">2</button>
+					<div class="btn-group">
+						<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</button>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Dropdown link</a>
+							<a class="dropdown-item" href="#">Dropdown link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="py-2 d-flex">
+			<div class="card mx-2">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+				<img src="./img/house2.jpg" class="card-img-bottom" alt="">
+			</div>
+			<div class="card mx-2">
+				<div class="card-header">
+					Featured
+				</div>
+				<img src="./img/house2.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+			<div class="card mx-2">
+				<img src="./img/house2.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+				<div class="card-footer text-muted">
+					2 days ago
+				</div>
+			</div>
+		</div>
+		<div class="py-2 card-deck">
+			<div class="card m-2">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<img src="./img/team1.jpg" class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card m-2 border-danger">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						<img src="./img/team2.jpg" class="card-img" alt="...">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 끝 -->
 	</div>
 	<script src="./js/index.js"></script>
 </body>
+
 </html>
